@@ -13,6 +13,11 @@
     </head>
     <body>
          <%@ include file="WEB-INF/jspf/banner.jspf" %><br>
-        <h1>Hello World!</h1>
+        <h2>Wrong User / Password</h2><br>
+        <form action="j_security_check" method="POST">
+            <label>User:</label> <input type="text" name="j_username" value="" /><br><br>
+            <label>Password:</label> <input type="password" name="j_password" value="" /><br><br>
+            <input type="submit" value="Login" />
+        </form>
     </body>
 </html>

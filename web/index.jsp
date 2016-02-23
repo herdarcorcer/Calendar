@@ -27,7 +27,7 @@
             <option value="AGOSTO">AGOSTO</option>
             <option value="SEPTIEMBRE">SEPTIEMBRE</option>
             <option value="OCTUBRE">OCTUBRE</option>
-            <option value="NOBIEMBRE">NOVIEMBRE</option>
+            <option value="NOVIEMBRE">NOVIEMBRE</option>
             <option value="DICIEMBRE">DICIEMBRE</option>
         </select>
         <input type="submit" value="Send">
