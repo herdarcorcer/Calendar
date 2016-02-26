@@ -11,10 +11,12 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link href="css/miestilo.css" rel="stylesheet" type="text/css"/>
         <title>JSP Page</title>
     </head>
     <body>
-         <%@ include file="WEB-INF/jspf/banner.jspf" %><br>
+        <form >
+            <%@ include file="WEB-INF/jspf/banner.jspf" %><br>
            
          <%int dias=0;%>
     <c:choose>
@@ -104,7 +106,13 @@
                  S=0;M=0;T=0;W=0;T2=0;F=0;S2=0;
                  }
                  %>
+                
+        
+         
                 </tbody>
             </table>
+                 <br><br>
+                 <a href="index.jsp">Atras</a>
+        </form>
     </body>
 </html>

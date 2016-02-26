@@ -32,12 +32,13 @@ public class ControllerServlet extends HttpServlet {
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        response.setContentType("text/html;charset=UTF-8");
+       
         ScoresData scoresData = new ScoresData();
         scoresData.setMeses(request.getParameter("meses"));
         
         request.setAttribute("scoresData", scoresData);
         request.getRequestDispatcher("result.jsp").forward(request, response);
+        
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">

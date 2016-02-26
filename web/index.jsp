@@ -9,10 +9,11 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link href="css/miestilo.css" rel="stylesheet" type="text/css"/>
         <title>JSP Page</title>
     </head>
     <body>
-        <form action="ControllerServlet" method="POST">
+        <form action="ControllerServlet" method="POST" >
             
          <%@ include file="WEB-INF/jspf/banner.jspf" %><br>
           <h2>which mont do you wento to see</h2>
@@ -34,3 +35,4 @@
         </form>
     </body>
 </html>
+
