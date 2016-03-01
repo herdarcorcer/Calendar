@@ -11,6 +11,7 @@
             <web-resource-name>Administrative Pages</web-resource-name>
             <description/>
             <url-pattern>/index.jsp</url-pattern>
+            <url-pattern>/result.jsp</url-pattern>
         </web-resource-collection>
         <auth-constraint>
             <description/>

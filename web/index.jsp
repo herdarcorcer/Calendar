@@ -18,18 +18,18 @@
          <%@ include file="WEB-INF/jspf/banner.jspf" %><br>
           <h2>which mont do you wento to see</h2>
         <select name="meses">
-            <option value="ENERO">ENERO</option>
-            <option value="FEBRERO">FEBRERO</option>
-            <option value="MARZO">MARZO</option>
-            <option value="ABRIL">ABRIL</option>
-            <option value="MAYO">MAYO</option>
-            <option value="JUNIO">JUNIO</option>
-            <option value="JULIO">JULIO</option>
-            <option value="AGOSTO">AGOSTO</option>
-            <option value="SEPTIEMBRE">SEPTIEMBRE</option>
-            <option value="OCTUBRE">OCTUBRE</option>
-            <option value="NOVIEMBRE">NOVIEMBRE</option>
-            <option value="DICIEMBRE">DICIEMBRE</option>
+            <option value="JANUARY">JANUARY</option>
+            <option value="FEBRUARY">FEBRUARY</option>
+            <option value="MARCH">MARCH</option>
+            <option value="APRIL">APRIL</option>
+            <option value="MAY">MAY</option>
+            <option value="JUNE">JUNE</option>
+            <option value="JULY">JULY</option>
+            <option value="AUGUST">AUGUST</option>
+            <option value="SEPTEMBER">SEPTEMBER</option>
+            <option value="OCTOBER">OCTOBER</option>
+            <option value="NOVEMBER">NOVEMBER</option>
+            <option value="DECEMBER">DECEMBER</option>
         </select>
         <input type="submit" value="Send">
         </form>

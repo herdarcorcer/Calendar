@@ -20,53 +20,18 @@
            
          <%int dias=0;%>
     <c:choose>
-        <c:when test="${scoresData.meses=='ENERO'}">
-            <h1>ENERO</h1>
+        <c:when test="${scoresData.meses=='JANUARY'||scoresData.meses=='MARCH'||scoresData.meses=='MAY'||scoresData.meses=='JULY'||scoresData.meses=='AUGUST'||scoresData.meses=='OCTOBER'||scoresData.meses=='DECEMBER'}">
+            <% out.println("<h1>"+scoresData.getMeses()+"</h1>");%>
             <% dias=31; %>
         </c:when>
-        <c:when test="${scoresData.meses=='FEBRERO'}">
-            <h1>FEBRERO</h1>
+        <c:when test="${scoresData.meses=='FEBRUARY'}">
+            <% out.println("<h1>"+scoresData.getMeses()+"</h1>");%>
             <% dias=29; %>
         </c:when>
-        <c:when test="${scoresData.meses=='MARZO'}">
-            <h1>MARZO</h1>
-            <% dias=31; %>
-        </c:when>
-        <c:when test="${scoresData.meses=='ABRIL'}">
-            <h1>ABRIL</h1>
+       
+        <c:when test="${scoresData.meses=='APRIL'||scoresData.meses=='JUNE'||scoresData.meses=='SEPTEMBER'||scoresData.meses=='NOVEMBER'}">
+            <% out.println("<h1>"+scoresData.getMeses()+"</h1>");%>
             <% dias=30; %>
-        </c:when>
-        <c:when test="${scoresData.meses=='MAYO'}">
-            <h1>MAYO</h1>
-            <% dias=31; %>
-        </c:when>
-        <c:when test="${scoresData.meses=='JUNIO'}">
-            <h1>JUNIO</h1>
-            <% dias=30; %>
-        </c:when>
-        <c:when test="${scoresData.meses=='JULIO'}">
-            <h1>JULIO</h1>
-            <% dias=31; %>
-        </c:when>
-        <c:when test="${scoresData.meses=='AGOSTO'}">
-            <h1>AGOSTO</h1>
-            <% dias=31; %>
-        </c:when>
-        <c:when test="${scoresData.meses=='SEPTIEMBRE'}">
-            <h1>SEPTIEMBRE</h1>
-            <% dias=30; %>
-        </c:when>
-        <c:when test="${scoresData.meses=='OCTUBRE'}">
-            <h1>OCTUBRE</h1>
-            <% dias=31; %>
-        </c:when>
-        <c:when test="${scoresData.meses=='NOVIEMBRE'}">
-            <h1>NOVIEMBRE</h1>
-            <% dias=30; %>
-        </c:when>
-        <c:when test="${scoresData.meses=='DICIEMBRE'}">
-            <h1>DICIEMBRE</h1>
-            <% dias=31; %>
         </c:when>
         <c:otherwise>
         </c:otherwise>
@@ -83,32 +48,32 @@
                         <th>S</th>
                     </tr>
                 </thead>
-                <tbody>              
+                <tbody>
+                    
                     <%
                  int count =0;
-                 int S=0,M=0,T=0,W=0,T2=0,F=0,S2=0;
                  int count2=1;
                  while(count<=dias)
-                 {                  
-                    while(count2<=7)
+                 {
+                     out.println("<tr>");
+                    while(count2<=7 )
                     {
-                        if(count2==1){if(count+count2>dias){count2++;}else{S=count+count2; count2++;}}
-                        if(count2==2){if(count+count2>dias){count2++;}else{M=count+count2; count2++;}}
-                        if(count2==3){if(count+count2>dias){count2++;}else{T=count+count2; count2++;}}
-                        if(count2==4){if(count+count2>dias){count2++;}else{W=count+count2; count2++;}}
-                        if(count2==5){if(count+count2>dias){count2++;}else{T2=count+count2; count2++;}}
-                        if(count2==6){if(count+count2>dias){count2++;}else{F=count+count2; count2++;}}
-                        if(count2==7){if(count+count2>dias){count2++;}else{S2=count+count2; count2++;}}
+                        int a= count+count2;
+                        if(a<=dias){
+                        out.println("<td>"+a+"</td>");
+                        }
+                        count2++;
+                        
                     }
+                    out.println("</tr>");
                     count=count+count2;
                     count2=1;
-                     out.println("<tr><td>"+S+"<td>"+M+"</td><td>"+T+"</td><td>"+W+"</td><td>"+T2+"</td><td>"+F+"</td><td>"+S2+"</td></tr>");
-                 S=0;M=0;T=0;W=0;T2=0;F=0;S2=0;
+                
                  }
                  %>
                 
         
-         
+                    
                 </tbody>
             </table>
                  <br><br>
